@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+
+}
+:root{
+	font-family: 'Stick No Bills', sans-serif;;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image:url(img/himg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+	background-size: 100%;
+}
+.header-logo{
+	max-height: 220px;
+	max-width: 220px;
+}
+
+nav{
+	padding: 2% 6%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+
+}
+.nav-links ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	
+}
+
+.nav-links ul li:after,
+.nav-links ul li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease;
+}
+
+.nav-links ul li:after {
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.nav-links ul li:before {
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.nav-links ul li:hover::before,
+.nav-links ul li:hover::after {
+  width: 10px;
+  height: 10px;
+  border-color: #fff;
+}
+.text-box{
+	margin-top: 3%;
+	font-size: 30px;
+
+	color: white;
+	text-align: center;
+}
+/* first body */
+.first-body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #e6e6e6;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+
+}
+.first-body-h{
+	font-size: 40px;
+	color: black;
+	background-color: transparent;
+	width: 100%;
+	text-align: center;
+}
+.h1PL{
+	margin-bottom: 40px;
+}
+.conteiner{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+
+}
+.conteiner .player{
+	
+	background-color: floralwhite;
+	box-shadow: 0 5px 15px rgb(0, 0, 0,.1);
+	border-radius: 10px;
+	padding: 15px;
+	margin: 25px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.content{
+	font-size: 25px;
+	text-align: center;
+}
+.icon{
+
+}
+.conteiner .player .icon{
+	width: 80px;
+	height: 80px;
+	margin-left: 40%;
+	margin-bottom: 10px;
+	background-color: papayawhip;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	font-size: 40px;
+	transition: 1s;
+}
+.conteiner .player:nth-child(1) .icon
+{
+box-shadow: 0 0 0 0 #f40027;
+background: #f40027;
+}
+.conteiner .player:nth-child(1):hover .icon
+{
+box-shadow: 0 0 0 400px #f40027;
+}
+.conteiner .player:nth-child(2) .icon
+{
+box-shadow: 0 0 0 0 #0027f4;
+background: #0027f4;
+}
+.conteiner .player:nth-child(2):hover .icon
+{
+box-shadow: 0 0 0 400px #0027f4;
+}
+
+.conteiner .player:nth-child(3) .icon
+{
+box-shadow: 0 0 0 0 #f4cd00;
+background: #f4cd00;
+}
+.conteiner .player:nth-child(3):hover .icon
+{
+box-shadow: 0 0 0 400px #f4cd00;
+}
+.conteiner .player .content
+{
+position: relative;
+z-index: 1;
+transition: .8s;
+}
+.conteiner .player:hover .content
+{
+color: whitesmoke;
+}
+.second-body{
+	width: 100%;
+	height: 130hv;
+	text-align: center;
+	margin: auto;
+	padding-top: 100px;
+	/*background-color: #91282e;*/
+	background-image: url(img/nekoma1.jpg);
+	background: rgb(0, 0, 0 , 0.1);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.f-h{
+	font-size: 70px;
+	color: goldenrod;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.row:hover .shoe{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.98);
+  box-shadow:none;
+  transition: .8s;
+}
+.row:hover .shoe:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  transition: .8s;
+  
+}
+.shoe:hover img{
+  transform: rotate(0) scale(1.01) translateZ(0);
+}
+.shoe3{
+	margin-top: 38px;
+}
+.row .shoe h3{
+	font-size: 40px;
+}
+.shoe3H{
+	margin-top: 59px;
+}
+ nav .fa{
+ 	display: none;
+ }
+
+@media only screen and (max-width: 768px) {
+
+ .text-box{
+	margin-top: 20%;
+	font-size: 20px;
+
+	color: white;
+	text-align: center;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		height: 100vh;
+		width: 200px;
+		background-color: darkred;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .fa{
+		display: block;
+		color: white;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	nav-links ul{
+		padding: 30px;
+	}
+	.header-logo{
+		margin-top: 20px;
+		width: 120px;
+		height: 60px;
+	}
+	.header{
+		background-image: url(https://wallpaperaccess.com/full/2027022.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	.conteiner .player .icon{
+		width: 50px;
+		height: 50px;
+		transition:2s;
+
+	}
+	.content{
+	font-size: 10px;
+	text-align: center;
+	padding: 2px;
+	margin: 2px;
+	}
+.conteiner .player:nth-child(1) .icon
+	{
+		box-shadow: 0 0 0 0 #f40027;
+		background: #f40027;
+	}
+	.conteiner .player:nth-child(1):hover .icon
+	{
+		box-shadow: 0 0 0 600px #f40027;
+	}
+	.conteiner .player:nth-child(2) .icon
+	{
+		box-shadow: 0 0 0 0 #0027f4;
+		background: #0027f4;
+	}
+	.conteiner .player:nth-child(2):hover .icon
+	{
+		box-shadow: 0 0 0 600px #0027f4;
+	}
+
+	.conteiner .player:nth-child(3) .icon
+	{
+		box-shadow: 0 0 0 0 #f4cd00;
+		background: #f4cd00;
+	}
+	.conteiner .player:nth-child(3):hover .icon
+	{
+		box-shadow: 0 0 0 600px #f4cd00;
+	}
+	.conteiner .player .content
+	{
+		position: relative;
+		z-index: 1;
+		transition: 1s;
+	}
+	.conteiner .player:hover .content
+	{
+		color: whitesmoke;	
+	}
+
+	.conteiner .player{
+		padding: 1px;
+	}
+
+	.row{
+		margin-top: 5px;
+		display: block;
+	}
+	#f{
+		width: 370px;
+		height: 260px;
+	}
+	#s{
+		width: 370px;
+		height: 260px;
+	}
+	#t{
+		width: 370px;
+		height: 190px;
+	}
+}
+
+
+
+
+
+/*
+
+
+
+
+
+*/
